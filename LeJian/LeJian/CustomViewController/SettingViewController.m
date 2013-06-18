@@ -138,7 +138,7 @@ typedef enum {
     _arraySectionOne = [[NSArray alloc] initWithObjects:@"提醒开关",@"自动清理日程",@"同步日历",@"删除提示开关",@"编辑快捷短信内容", nil];
     _arraySectionTwo = [[NSArray alloc] initWithObjects:@"给乐见一个评价吧",@"关于我们",@"意见反馈", nil];
     
-    _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, 320, 416) style:UITableViewStyleGrouped];
+    _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, 320, DEVICE_HEIGHT-64) style:UITableViewStyleGrouped];
     _tableView.backgroundColor = [UIColor whiteColor];
     _tableView.delegate = self;
     _tableView.clipsToBounds = YES;

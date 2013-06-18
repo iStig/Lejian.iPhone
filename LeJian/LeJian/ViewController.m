@@ -13,8 +13,12 @@
 #import <QuartzCore/QuartzCore.h>
 #import "ClockManager.h"
 
-#define SHOW_SCROLLVIEW_FRAME CGRectMake(0, 0, 320, 416)
-#define HIDE_SCROLLVIEW_FRAME CGRectMake(320, 0, 320, 416)
+
+#define SHOW_SCROLLVIEW_FRAME CGRectMake(0,0, 320, [[UIScreen mainScreen ] bounds].size.height-44-20)
+#define HIDE_SCROLLVIEW_FRAME CGRectMake(320, 0, 320, [[UIScreen mainScreen ] bounds].size.height-44-20)
+
+#define SHOW_SCROLLVIEW_FRAME_ CGRectMake(0,40, 320, [[UIScreen mainScreen ] bounds].size.height-44-20)
+#define HIDE_SCROLLVIEW_FRAME_ CGRectMake(320, 40, 320, [[UIScreen mainScreen ] bounds].size.height-44-20)
 
 typedef enum {
     AddType = 0,
@@ -97,19 +101,50 @@ NSInteger const kAlertBaseTag = 86700;
         {
             return;
         }
-        newCard = [[NewCardView alloc] initWithFrame:CGRectMake(0, 480, 320, 367)];
+        
+        if (DEVICE_HEIGHT==480) {
+             newCard = [[NewCardView alloc] initWithFrame:CGRectMake(0, 480, 320, 367)];
+        }else{
+         newCard = [[NewCardView alloc] initWithFrame:CGRectMake(0, 520, 320, 367)];
+        }
+       
         newCard.delegate = self;
         newCard.tag = kBaseViewTag;
         [self.view addSubview:newCard];
         [self.view bringSubviewToFront:_bottomBg];
-        rect = CGRectMake(0, 0, 320, 367);
-        _ttScrollView.frame = SHOW_SCROLLVIEW_FRAME;
+        
+        if (DEVICE_HEIGHT==480) {
+          rect = CGRectMake(0, 0, 320, 367);
+        }else{
+          rect = CGRectMake(0, 40, 320, 367);
+        }
+        
+        
+        if (DEVICE_HEIGHT==480) {
+                    _ttScrollView.frame = SHOW_SCROLLVIEW_FRAME;
+        }
+        else{
+        
+                _ttScrollView.frame = SHOW_SCROLLVIEW_FRAME_;
+        }
+
         [newCard release];
     }
     else
     {
-        _ttScrollView.frame = HIDE_SCROLLVIEW_FRAME;
-        rect = CGRectMake(0, 480, 320, 367);
+        if (DEVICE_HEIGHT==480) {
+            _ttScrollView.frame = HIDE_SCROLLVIEW_FRAME;
+        }
+        else{
+            
+             _ttScrollView.frame = HIDE_SCROLLVIEW_FRAME_;
+        }
+       
+        if (DEVICE_HEIGHT==480) {
+            rect = CGRectMake(0, 480, 320, 367);
+        }else{
+            rect = CGRectMake(0, 520, 320, 367);
+        }
     }
     [UIView animateWithDuration:0.3
                           delay:0
@@ -118,11 +153,23 @@ NSInteger const kAlertBaseTag = 86700;
                          newCard.frame = rect;
                          if (bAdd)
                          {
-                             _ttScrollView.frame = HIDE_SCROLLVIEW_FRAME;
+                             if (DEVICE_HEIGHT==480) {
+                                 _ttScrollView.frame = HIDE_SCROLLVIEW_FRAME;
+                             }
+                             else{
+                                 
+                                 _ttScrollView.frame = HIDE_SCROLLVIEW_FRAME_;
+                             }
                          }
                          else 
                          {
-                             _ttScrollView.frame = SHOW_SCROLLVIEW_FRAME;
+                             if (DEVICE_HEIGHT==480) {
+                                 _ttScrollView.frame = SHOW_SCROLLVIEW_FRAME;
+                             }
+                             else{
+                                 
+                                 _ttScrollView.frame = SHOW_SCROLLVIEW_FRAME_;
+                             }
                          }
                      }
                      completion:^(BOOL finished){
@@ -365,7 +412,15 @@ NSInteger const kAlertBaseTag = 86700;
     
     _bFirst = YES;
     
-    _ttScrollView = [[TTScrollView alloc] initWithFrame:CGRectMake(0, 0, 320, 367)];
+
+    if (DEVICE_HEIGHT==480) {
+            _ttScrollView = [[TTScrollView alloc] initWithFrame:CGRectMake(0, 0, 320, 367)];
+    }
+    else{
+        
+            _ttScrollView = [[TTScrollView alloc] initWithFrame:CGRectMake(0,44, 320, 367)];
+    }
+    _ttScrollView.autoresizingMask=UIViewAutoresizingFlexibleBottomMargin;
     _ttScrollView.backgroundColor = [UIColor clearColor];
     _ttScrollView.delegate = self;
     _ttScrollView.dataSource = self;
@@ -388,7 +443,7 @@ NSInteger const kAlertBaseTag = 86700;
     [_btnEdit addTarget:self action:@selector(buttonClicked:) forControlEvents:UIControlEventTouchUpInside];
 
     
-    _bottomBg = [[UIImageView alloc] initWithFrame:CGRectMake(0, 367, 320, 49)];
+    _bottomBg = [[UIImageView alloc] initWithFrame:CGRectMake(0, DEVICE_HEIGHT-49-64, 320, 49)];
     _bottomBg.backgroundColor = [UIColor clearColor];
     _bottomBg.userInteractionEnabled = YES;
     [self.view addSubview:_bottomBg];

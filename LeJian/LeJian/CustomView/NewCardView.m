@@ -13,8 +13,8 @@
 #import "ThumbMapView.h"
 
 
-#define SHOW_C_PICKER_CENTER      CGPointMake(160, 392)
-#define HIDE_C_PICKER_CENTER      CGPointMake(160, 610)
+#define SHOW_C_PICKER_CENTER      CGPointMake(160,DEVICE_HEIGHT-88)
+#define HIDE_C_PICKER_CENTER      CGPointMake(160,DEVICE_HEIGHT-88+252)
 
 typedef enum{
     DateType = 0,

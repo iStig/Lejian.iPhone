@@ -25,8 +25,8 @@
 #define DEFAULT_CONTENT_TEXT @"添加约会描述 "
 #define DELETE_SEC(d) ((d) - ((d) % 60))
 
-#define SHOW_PICKER_CENTER      CGPointMake(160, 328)
-#define HIDE_PICKER_CENTER      CGPointMake(160, 566)
+#define SHOW_PICKER_CENTER      CGPointMake(160, DEVICE_HEIGHT-170)
+#define HIDE_PICKER_CENTER      CGPointMake(160, DEVICE_HEIGHT-170+252)
 
 typedef enum 
 {

@@ -202,6 +202,7 @@
 		04C02CCE15E5F71200971ACC /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 04C02CCD15E5F71200971ACC /* Default.png */; };
 		04C02CD015E5F71500971ACC /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04C02CCF15E5F71400971ACC /* Default@2x.png */; };
 		04C65C0215EC987200B12579 /* CustomAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C65C0115EC987200B12579 /* CustomAnnotationView.m */; };
+		6284504B176F165700950386 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6284504A176F165700950386 /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -446,6 +447,7 @@
 		04C02CCF15E5F71400971ACC /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		04C65C0015EC987100B12579 /* CustomAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomAnnotationView.h; sourceTree = "<group>"; };
 		04C65C0115EC987200B12579 /* CustomAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomAnnotationView.m; sourceTree = "<group>"; };
+		6284504A176F165700950386 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -474,6 +476,7 @@
 		0491A4BB15E3861100C499D8 = {
 			isa = PBXGroup;
 			children = (
+				6284504A176F165700950386 /* Default-568h@2x.png */,
 				04C02CCF15E5F71400971ACC /* Default@2x.png */,
 				04C02CCD15E5F71200971ACC /* Default.png */,
 				0490105415E4E3B4009C17FE /* icon114.png */,
@@ -1049,6 +1052,7 @@
 				04B6A0E115F09FBC0015341B /* help03@2x.png in Resources */,
 				04B6A0E415F0A1F10015341B /* Guide00.png in Resources */,
 				04B6A0E515F0A1F10015341B /* Guide00@2x.png in Resources */,
+				6284504B176F165700950386 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

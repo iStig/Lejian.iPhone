@@ -59,7 +59,7 @@ NSInteger const kAboutBaseTag = 21350;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    UIImageView *imgAbout = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 320, 416)];
+    UIImageView *imgAbout = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 320, [[UIScreen mainScreen ] bounds].size.height-64)];
     imgAbout.image = [UIImage imageNamed:@"about01.png"];
     [self.view addSubview:imgAbout];
     [imgAbout release];

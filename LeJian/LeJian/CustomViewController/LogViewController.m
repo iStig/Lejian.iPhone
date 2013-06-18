@@ -168,7 +168,7 @@ NSInteger const kLogBaseTag = 12340;
     [self.view addSubview:_kalView];
     [self fetchDataForCurrentMonth];
     
-    _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 272, 320, 144) style:UITableViewStylePlain];
+    _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 272, 320, DEVICE_HEIGHT-64-272) style:UITableViewStylePlain];
     _tableView.delegate = self;
     _tableView.dataSource = self;
     _tableView.backgroundColor = [UIColor whiteColor];
@@ -179,7 +179,10 @@ NSInteger const kLogBaseTag = 12340;
     [self.view addSubview:coverView];
     [coverView release];
     
-    _vCardBG = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 320, 416)];
+  
+        _vCardBG = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 320, DEVICE_HEIGHT-64)];
+
+    
     _vCardBG.backgroundColor = [UIColor grayColor];
     _vCardBG.alpha = 0;
     [self.view addSubview:_vCardBG];

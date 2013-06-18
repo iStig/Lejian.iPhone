@@ -40,6 +40,8 @@
     [self.window setRootViewController:_navigationController];
     [_navigationController release];
     
+
+    
    if ([[PublicMethod sharedMethod] getValueForKey:kIsAppFirstKey] == nil)
     {
         _guideVC = [[GuideViewController alloc] init];

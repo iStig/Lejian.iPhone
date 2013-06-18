@@ -12,6 +12,7 @@
 #import "AboutUsViewController.h"
 #import "FastMessageViewController.h"
 #import "LejianData.h"
+#import "AppRecommendViewController.h"
 
 #define APPLICATIONSCORE    @"itms-apps://ax.itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?type=Purple+Software&id=558382675"
 
@@ -29,6 +30,7 @@ typedef enum {
 typedef enum {
     PraiseCell = 0,
     AboutUsCell,
+    AppRecommendCell,
     FeedbackCell,
 }SecondSection;
 
@@ -136,7 +138,7 @@ typedef enum {
     
     _selectedRow = 1000;
     _arraySectionOne = [[NSArray alloc] initWithObjects:@"提醒开关",@"自动清理日程",@"同步日历",@"删除提示开关",@"编辑快捷短信内容", nil];
-    _arraySectionTwo = [[NSArray alloc] initWithObjects:@"给乐见一个评价吧",@"关于我们",@"意见反馈", nil];
+    _arraySectionTwo = [[NSArray alloc] initWithObjects:@"给乐见一个评价吧",@"关于我们",@"应用推荐",@"意见反馈", nil];
     
     _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, 320, DEVICE_HEIGHT-64) style:UITableViewStyleGrouped];
     _tableView.backgroundColor = [UIColor whiteColor];
@@ -411,6 +413,12 @@ typedef enum {
         else if (PraiseCell == indexPath.row)
         {
             [[UIApplication sharedApplication] openURL:[NSURL URLWithString:APPLICATIONSCORE]];
+        }
+        else if (AppRecommendCell == indexPath.row){
+        AppRecommendViewController *appRecommend = [[AppRecommendViewController alloc] init];
+        [(NavigationController *)self.navigationController pushViewController:appRecommend animated:YES];
+        [appRecommend release];
+        
         }
     }
     [_tableView deselectRowAtIndexPath:[_tableView indexPathForSelectedRow] animated:YES]; 

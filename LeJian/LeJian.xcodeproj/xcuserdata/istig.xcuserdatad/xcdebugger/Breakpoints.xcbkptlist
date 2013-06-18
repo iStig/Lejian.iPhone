@@ -7,8 +7,34 @@
          shouldBeEnabled = "Yes"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
+         filePath = "LeJian/ViewController.m"
+         timestampString = "393235174.178667"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "96"
+         endingLineNumber = "96"
+         landmarkName = "-addNewCardAnimation:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "LeJian/ViewController.m"
+         timestampString = "393235182.850261"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "264"
+         endingLineNumber = "264"
+         landmarkName = "-buttonClicked:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
          filePath = "LeJian/CustomView/NewCardView.m"
-         timestampString = "393215230.442113"
+         timestampString = "393235228.240332"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
          startingLineNumber = "260"
@@ -20,13 +46,13 @@
          shouldBeEnabled = "Yes"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
-         filePath = "LeJian/ViewController.m"
-         timestampString = "393216621.483669"
+         filePath = "LeJian/CustomView/NewCardView.m"
+         timestampString = "393235331.22431"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "123"
-         endingLineNumber = "123"
-         landmarkName = "-addNewCardAnimation:"
+         startingLineNumber = "129"
+         endingLineNumber = "129"
+         landmarkName = "-displayNewCardView"
          landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint
@@ -34,12 +60,25 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "LeJian/ViewController.m"
-         timestampString = "393216474.691997"
+         timestampString = "393235394.18582"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "96"
-         endingLineNumber = "96"
-         landmarkName = "-addNewCardAnimation:"
+         startingLineNumber = "563"
+         endingLineNumber = "563"
+         landmarkName = "-newCardIsFinishedEdit:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "LeJian/Data/Database/LeJianDatabase.m"
+         timestampString = "393235475.271101"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "283"
+         endingLineNumber = "283"
+         landmarkName = "-appendCardInfo:"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>

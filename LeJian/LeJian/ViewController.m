@@ -105,7 +105,7 @@ NSInteger const kAlertBaseTag = 86700;
         if (DEVICE_HEIGHT==480) {
              newCard = [[NewCardView alloc] initWithFrame:CGRectMake(0, 480, 320, 367)];
         }else{
-         newCard = [[NewCardView alloc] initWithFrame:CGRectMake(0, 520, 320, 367)];
+             newCard = [[NewCardView alloc] initWithFrame:CGRectMake(0, 520, 320, 367)];
         }
        
         newCard.delegate = self;
@@ -453,12 +453,12 @@ NSInteger const kAlertBaseTag = 86700;
     [[PublicMethod sharedMethod] addButtonWithRect:CGRectMake(210, 5, 110, 44) img_n:@"footbtn_03.png" img_p:nil tag:kBaseButtonTag + 2 target:self method:@selector(buttonClicked:) superView:_bottomBg userInteractionEnabled:YES];
     
     _vExpired = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 9, 9)];
-    _vExpired.center = CGPointMake(148, 357);
+    _vExpired.center = CGPointMake(148,DEVICE_HEIGHT-121);
     _vExpired.image = [UIImage imageNamed:@"point_02.png"];
     [self.view addSubview:_vExpired];
 
     _vUnexpired = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 9, 9 )];
-    _vUnexpired.center = CGPointMake(170, 357);
+    _vUnexpired.center = CGPointMake(170, DEVICE_HEIGHT-121);
     _vUnexpired.image = [UIImage imageNamed:@"point_01.png"];
     [self.view addSubview:_vUnexpired];
     
@@ -577,7 +577,12 @@ NSInteger const kAlertBaseTag = 86700;
         {            
             [_LJData appendNewCard:card_info];   
             [[ClockManager shardeScheduleData] addNewLocalNotification:card_info];
-            _ttScrollView.frame = SHOW_SCROLLVIEW_FRAME;
+            if (DEVICE_HEIGHT==480) {
+                 _ttScrollView.frame = SHOW_SCROLLVIEW_FRAME;
+            }
+            else{
+                _ttScrollView.frame = SHOW_SCROLLVIEW_FRAME_;
+            }
         }
         [[PublicMethod sharedMethod] setFuntionType:NormalType];
         NSDictionary *cardList = [self cardListIsFirst:NO card_id:card_id];
@@ -650,6 +655,11 @@ NSInteger const kAlertBaseTag = 86700;
 
 - (void)scrollView:(TTScrollView *)scrollView didMoveToPageAtIndex:(NSInteger)pageIndex
 {
+    
+    NSLog(@"%d______%d",pageIndex,[_arrayCardList count]);
+    NSLog(@"%d______%d",[[[_arrayCardList objectAtIndex:pageIndex] objectForKey:kDateKey] intValue],   [[NSNumber numberWithDouble:[[NSDate date] timeIntervalSince1970]] intValue]  );
+
+  
     if (pageIndex <= [_arrayCardList count] - 1)
     {
         if ([[[_arrayCardList objectAtIndex:pageIndex] objectForKey:kDateKey] intValue] <= [[NSDate date] timeIntervalSince1970])

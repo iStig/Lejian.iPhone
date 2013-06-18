@@ -202,6 +202,7 @@
 		04C02CCE15E5F71200971ACC /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 04C02CCD15E5F71200971ACC /* Default.png */; };
 		04C02CD015E5F71500971ACC /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04C02CCF15E5F71400971ACC /* Default@2x.png */; };
 		04C65C0215EC987200B12579 /* CustomAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C65C0115EC987200B12579 /* CustomAnnotationView.m */; };
+		62227A7017703C2700F85100 /* AppRecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62227A6F17703C2700F85100 /* AppRecommendViewController.m */; };
 		6284504B176F165700950386 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6284504A176F165700950386 /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
@@ -447,6 +448,8 @@
 		04C02CCF15E5F71400971ACC /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		04C65C0015EC987100B12579 /* CustomAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomAnnotationView.h; sourceTree = "<group>"; };
 		04C65C0115EC987200B12579 /* CustomAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomAnnotationView.m; sourceTree = "<group>"; };
+		62227A6E17703C2700F85100 /* AppRecommendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppRecommendViewController.h; sourceTree = "<group>"; };
+		62227A6F17703C2700F85100 /* AppRecommendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppRecommendViewController.m; sourceTree = "<group>"; };
 		6284504A176F165700950386 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -476,6 +479,8 @@
 		0491A4BB15E3861100C499D8 = {
 			isa = PBXGroup;
 			children = (
+				62227A6E17703C2700F85100 /* AppRecommendViewController.h */,
+				62227A6F17703C2700F85100 /* AppRecommendViewController.m */,
 				6284504A176F165700950386 /* Default-568h@2x.png */,
 				04C02CCF15E5F71400971ACC /* Default@2x.png */,
 				04C02CCD15E5F71200971ACC /* Default.png */,
@@ -1102,6 +1107,7 @@
 				04B6A0B715F049BF0015341B /* GuideViewController.m in Sources */,
 				04B6A0D515F09D250015341B /* BDGuideView.m in Sources */,
 				048BEFD215F304A70059EFC3 /* ThumbMapView.m in Sources */,
+				62227A7017703C2700F85100 /* AppRecommendViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

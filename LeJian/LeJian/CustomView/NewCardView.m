@@ -282,7 +282,14 @@ NSInteger const kMapViewTag = 98789;
 {
     if ([_mdictCard objectForKey:kDateKey] && [_mdictCard objectForKey:kContactNameKey] && ([[PublicMethod sharedMethod] getValueForKey:kFirstStep3Key] == nil) && ([_mdictCard objectForKey:kMapNameKey] == nil))
     {
+        if (DEVICE_HEIGHT==480) {
+            
         [BDGuideView showGuideImageNamed:@"help03.png" withDelegate:self];
+        }else{
+        
+        [BDGuideView showGuideImageNamed:@"3.png" withDelegate:self];
+        }
+        
        [[PublicMethod sharedMethod] saveValue:@"1" forKey:kFirstStep3Key];
     }
 }

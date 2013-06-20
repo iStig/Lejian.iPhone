@@ -121,7 +121,7 @@ NSInteger const kAlertBaseTag = 86700;
         
         
         if (DEVICE_HEIGHT==480) {
-                    _ttScrollView.frame = SHOW_SCROLLVIEW_FRAME;
+                _ttScrollView.frame = SHOW_SCROLLVIEW_FRAME;
         }
         else{
         
@@ -270,7 +270,12 @@ NSInteger const kAlertBaseTag = 86700;
         {
             if ([[PublicMethod sharedMethod] getValueForKey:kFirstStep2Key] == nil)
             {
-                [BDGuideView showGuideImageNamed:@"help02.png" withDelegate:self];
+                if (DEVICE_HEIGHT==480) {
+                    [BDGuideView showGuideImageNamed:@"help02.png" withDelegate:self];
+                }
+                else{
+                [BDGuideView showGuideImageNamed:@"2.png" withDelegate:self];
+                }
                 [[PublicMethod sharedMethod] saveValue:@"1" forKey:kFirstStep2Key];
             }
             [btn setImage:[UIImage imageNamed:@"footbtn_01_2.png"] forState:UIControlStateNormal];
@@ -522,7 +527,13 @@ NSInteger const kAlertBaseTag = 86700;
 {
     if ([[PublicMethod sharedMethod] getValueForKey:kFirstStep1Key] == nil)
     {
-        [BDGuideView showGuideImageNamed:@"help01.png" withDelegate:self];
+        if (DEVICE_HEIGHT==480) {
+             [BDGuideView showGuideImageNamed:@"help01.png" withDelegate:self];
+        }
+        else{
+        [BDGuideView showGuideImageNamed:@"1.png" withDelegate:self];
+        }
+        
         [[PublicMethod sharedMethod] saveValue:@"1" forKey:kFirstStep1Key];
     }
 }

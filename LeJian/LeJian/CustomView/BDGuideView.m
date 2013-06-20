@@ -27,9 +27,18 @@
 {
     CGRect rect = [UIScreen mainScreen].bounds;
     self = [super initWithFrame:rect];
+    UIImageView *guideImageView =nil;
     if (self) {
         self.backgroundColor = [UIColor clearColor];
-        UIImageView *guideImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 20, 320, 460)];
+        if (DEVICE_HEIGHT==480) {
+         guideImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 20, 320, DEVICE_HEIGHT-20)];
+        }
+        else{
+        
+         guideImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 20, 320, DEVICE_HEIGHT-20)];
+        
+        }
+       
         guideImageView.image = [UIImage imageNamed:imageName];
         [guideImageView setUserInteractionEnabled:YES];
         [self addSubview:guideImageView];

@@ -72,12 +72,12 @@ NSInteger const kGuideAlertTag = 94530;
 {
     [super viewDidLoad];
     
-    UIImageView *vbg = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 320, 460)];
+    UIImageView *vbg = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 320, DEVICE_HEIGHT-20)];
     vbg.image = [UIImage imageNamed:@"Guide00.png"];
     [self.view addSubview:vbg];
     [vbg release];
     
-    TTScrollView *scrollView = [[TTScrollView alloc] initWithFrame:CGRectMake(0, 0, 320, 460)];
+    TTScrollView *scrollView = [[TTScrollView alloc] initWithFrame:CGRectMake(0, 0, 320, DEVICE_HEIGHT-20)];
     scrollView.backgroundColor = [UIColor clearColor];
     scrollView.delegate = self;
     scrollView.dataSource = self;
@@ -85,22 +85,35 @@ NSInteger const kGuideAlertTag = 94530;
     scrollView.zoomEnabled = NO;
     [self.view addSubview:scrollView];
     
-    _arrayGuides = [[NSArray alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"GuideImage" ofType:@"plist"]];
+    
+    if(DEVICE_HEIGHT==480){
+        _arrayGuides = [[NSArray alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"GuideImage" ofType:@"plist"]];
+    }
+    else{
+        _arrayGuides = [[NSArray alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"GuideImage-568h" ofType:@"plist"]];
+    }
     
     _marrayGuidePoint = [[NSMutableArray alloc] initWithCapacity:[_arrayGuides count]];
     for (int i = 0; i < [_arrayGuides count]; i ++)
     {
-        UIImageView *point = [[UIImageView alloc] initWithFrame:CGRectMake(136 + 20 * i, 420, 9, 9)];
+        UIImageView *point = [[UIImageView alloc] initWithFrame:CGRectMake(136 + 20 * i, DEVICE_HEIGHT-60, 9, 9)];
         point.image = [UIImage imageNamed:@"point_02.png"];
         [self.view addSubview:point];
         [_marrayGuidePoint addObject:point];
         [point release];
     }
     
-    _switch = [[UISwitch alloc] initWithFrame:CGRectMake(220, 297, 0, 0)];
+    NSLog(@"%f",DEVICE_HEIGHT);
+    if(DEVICE_HEIGHT==480){
+        _switch = [[UISwitch alloc] initWithFrame:CGRectMake(220,DEVICE_HEIGHT-183, 0, 0)];
+    }
+    else{
+        _switch = [[UISwitch alloc] initWithFrame:CGRectMake(220,DEVICE_HEIGHT-213, 0, 0)];
+    }
+        [self.view addSubview:_switch]; 
     [_switch setOn:[[[PublicMethod sharedMethod] getValueForKey:kSynchronizationSystemKey] boolValue]];
     [_switch addTarget:self action:@selector(switchAction) forControlEvents:UIControlEventValueChanged];
-    [self.view addSubview:_switch];   
+  
     _switch.hidden = YES;
 }
 

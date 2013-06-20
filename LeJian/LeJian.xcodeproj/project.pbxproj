@@ -202,8 +202,18 @@
 		04C02CCE15E5F71200971ACC /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 04C02CCD15E5F71200971ACC /* Default.png */; };
 		04C02CD015E5F71500971ACC /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 04C02CCF15E5F71400971ACC /* Default@2x.png */; };
 		04C65C0215EC987200B12579 /* CustomAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C65C0115EC987200B12579 /* CustomAnnotationView.m */; };
+		62220C39177305C700C2E574 /* about01-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 62220C38177305C700C2E574 /* about01-568h@2x.png */; };
 		62227A7017703C2700F85100 /* AppRecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62227A6F17703C2700F85100 /* AppRecommendViewController.m */; };
-		6284504B176F165700950386 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6284504A176F165700950386 /* Default-568h@2x.png */; };
+		62227B9E1772A5B700F85100 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 62227B9D1772A5B700F85100 /* Default-568h@2x.png */; };
+		62227BAD1772A82400F85100 /* bg-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 62227BA11772A82300F85100 /* bg-568h@2x.png */; };
+		62227BAF1772A82400F85100 /* Guide00-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 62227BA31772A82300F85100 /* Guide00-568h@2x.png */; };
+		62227BB11772A82400F85100 /* Guide01-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 62227BA51772A82300F85100 /* Guide01-568h@2x.png */; };
+		62227BB31772A82400F85100 /* Guide02-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 62227BA71772A82400F85100 /* Guide02-568h@2x.png */; };
+		62227BB51772A82400F85100 /* Guide03-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 62227BA91772A82400F85100 /* Guide03-568h@2x.png */; };
+		62227BB81772A9D000F85100 /* GuideImage-568h.plist in Resources */ = {isa = PBXBuildFile; fileRef = 62227BB71772A9D000F85100 /* GuideImage-568h.plist */; };
+		6226B15E1772F6B000D9B2E5 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 6226B15B1772F6AF00D9B2E5 /* 1.png */; };
+		6226B15F1772F6B000D9B2E5 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 6226B15C1772F6AF00D9B2E5 /* 2.png */; };
+		6226B1601772F6B000D9B2E5 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 6226B15D1772F6AF00D9B2E5 /* 3.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -448,9 +458,19 @@
 		04C02CCF15E5F71400971ACC /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		04C65C0015EC987100B12579 /* CustomAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomAnnotationView.h; sourceTree = "<group>"; };
 		04C65C0115EC987200B12579 /* CustomAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomAnnotationView.m; sourceTree = "<group>"; };
+		62220C38177305C700C2E574 /* about01-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "about01-568h@2x.png"; sourceTree = "<group>"; };
 		62227A6E17703C2700F85100 /* AppRecommendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppRecommendViewController.h; sourceTree = "<group>"; };
 		62227A6F17703C2700F85100 /* AppRecommendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppRecommendViewController.m; sourceTree = "<group>"; };
-		6284504A176F165700950386 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		62227B9D1772A5B700F85100 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		62227BA11772A82300F85100 /* bg-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg-568h@2x.png"; sourceTree = "<group>"; };
+		62227BA31772A82300F85100 /* Guide00-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Guide00-568h@2x.png"; sourceTree = "<group>"; };
+		62227BA51772A82300F85100 /* Guide01-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Guide01-568h@2x.png"; sourceTree = "<group>"; };
+		62227BA71772A82400F85100 /* Guide02-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Guide02-568h@2x.png"; sourceTree = "<group>"; };
+		62227BA91772A82400F85100 /* Guide03-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Guide03-568h@2x.png"; sourceTree = "<group>"; };
+		62227BB71772A9D000F85100 /* GuideImage-568h.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GuideImage-568h.plist"; sourceTree = "<group>"; };
+		6226B15B1772F6AF00D9B2E5 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		6226B15C1772F6AF00D9B2E5 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		6226B15D1772F6AF00D9B2E5 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -479,9 +499,9 @@
 		0491A4BB15E3861100C499D8 = {
 			isa = PBXGroup;
 			children = (
+				62227B9C1772A54200F85100 /* New IMAGE */,
 				62227A6E17703C2700F85100 /* AppRecommendViewController.h */,
 				62227A6F17703C2700F85100 /* AppRecommendViewController.m */,
-				6284504A176F165700950386 /* Default-568h@2x.png */,
 				04C02CCF15E5F71400971ACC /* Default@2x.png */,
 				04C02CCD15E5F71200971ACC /* Default.png */,
 				0490105415E4E3B4009C17FE /* icon114.png */,
@@ -862,6 +882,24 @@
 			path = NormalCard;
 			sourceTree = "<group>";
 		};
+		62227B9C1772A54200F85100 /* New IMAGE */ = {
+			isa = PBXGroup;
+			children = (
+				62220C38177305C700C2E574 /* about01-568h@2x.png */,
+				6226B15B1772F6AF00D9B2E5 /* 1.png */,
+				6226B15C1772F6AF00D9B2E5 /* 2.png */,
+				6226B15D1772F6AF00D9B2E5 /* 3.png */,
+				62227BA11772A82300F85100 /* bg-568h@2x.png */,
+				62227BA31772A82300F85100 /* Guide00-568h@2x.png */,
+				62227BA51772A82300F85100 /* Guide01-568h@2x.png */,
+				62227BA71772A82400F85100 /* Guide02-568h@2x.png */,
+				62227BA91772A82400F85100 /* Guide03-568h@2x.png */,
+				62227B9D1772A5B700F85100 /* Default-568h@2x.png */,
+				62227BB71772A9D000F85100 /* GuideImage-568h.plist */,
+			);
+			name = "New IMAGE";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1057,7 +1095,17 @@
 				04B6A0E115F09FBC0015341B /* help03@2x.png in Resources */,
 				04B6A0E415F0A1F10015341B /* Guide00.png in Resources */,
 				04B6A0E515F0A1F10015341B /* Guide00@2x.png in Resources */,
-				6284504B176F165700950386 /* Default-568h@2x.png in Resources */,
+				62227B9E1772A5B700F85100 /* Default-568h@2x.png in Resources */,
+				62227BAD1772A82400F85100 /* bg-568h@2x.png in Resources */,
+				62227BAF1772A82400F85100 /* Guide00-568h@2x.png in Resources */,
+				62227BB11772A82400F85100 /* Guide01-568h@2x.png in Resources */,
+				62227BB31772A82400F85100 /* Guide02-568h@2x.png in Resources */,
+				62227BB51772A82400F85100 /* Guide03-568h@2x.png in Resources */,
+				62227BB81772A9D000F85100 /* GuideImage-568h.plist in Resources */,
+				6226B15E1772F6B000D9B2E5 /* 1.png in Resources */,
+				6226B15F1772F6B000D9B2E5 /* 2.png in Resources */,
+				6226B1601772F6B000D9B2E5 /* 3.png in Resources */,
+				62220C39177305C700C2E574 /* about01-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1130,6 +1178,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Jianming Zhang (N9AC739BRU)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -1145,6 +1194,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PROVISIONING_PROFILE = "B9DC7BA7-2724-4E04-B380-B4C0C29E4285";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -1154,6 +1204,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Jianming Zhang (N9AC739BRU)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -1163,6 +1214,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "B9DC7BA7-2724-4E04-B380-B4C0C29E4285";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -1171,8 +1223,8 @@
 		0491A4E515E3861300C499D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer: WANG QI (UTL9GN9FA9)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: WANG QI (UTL9GN9FA9)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Jianming Zhang (N9AC739BRU)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Jianming Zhang (N9AC739BRU)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(DEVELOPER_FRAMEWORKS_DIR)\"",
@@ -1182,8 +1234,8 @@
 				INFOPLIST_FILE = "LeJian/LeJian-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "FF474BDB-1E4D-4CD0-96BB-578E40CA58C1";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "FF474BDB-1E4D-4CD0-96BB-578E40CA58C1";
+				PROVISIONING_PROFILE = "B9DC7BA7-2724-4E04-B380-B4C0C29E4285";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "B9DC7BA7-2724-4E04-B380-B4C0C29E4285";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -1192,8 +1244,8 @@
 		0491A4E615E3861300C499D8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer: Victor Zhang (9VHPP7LDBC)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Victor Zhang (9VHPP7LDBC)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Jianming Zhang (N9AC739BRU)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Jianming Zhang (N9AC739BRU)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(DEVELOPER_FRAMEWORKS_DIR)\"",
@@ -1203,8 +1255,8 @@
 				INFOPLIST_FILE = "LeJian/LeJian-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "2B8C6F04-6639-4A1E-887C-D7AA6948FA68";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "2B8C6F04-6639-4A1E-887C-D7AA6948FA68";
+				PROVISIONING_PROFILE = "B9DC7BA7-2724-4E04-B380-B4C0C29E4285";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "B9DC7BA7-2724-4E04-B380-B4C0C29E4285";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
@@ -1215,6 +1267,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Jianming Zhang (N9AC739BRU)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -1224,6 +1277,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "B9DC7BA7-2724-4E04-B380-B4C0C29E4285";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -1232,7 +1286,7 @@
 		049F904B15E789AA006F9718 /* distribution */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Jianming Zhang (N9AC739BRU)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1243,7 +1297,7 @@
 				INFOPLIST_FILE = "LeJian/LeJian-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "B9DC7BA7-2724-4E04-B380-B4C0C29E4285";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;

@@ -37,12 +37,15 @@
     ViewController *viewController = [[ViewController alloc] init];
     NavigationController *_navigationController = [[NavigationController alloc] initWithRootViewController:viewController];
     [viewController release];
+      
     [self.window setRootViewController:_navigationController];
+    
+    
     [_navigationController release];
     
 
     
-   if ([[PublicMethod sharedMethod] getValueForKey:kIsAppFirstKey] == nil)
+   //if ([[PublicMethod sharedMethod] getValueForKey:kIsAppFirstKey] == nil)
     {
         _guideVC = [[GuideViewController alloc] init];
         self.window.rootViewController.navigationController.navigationBarHidden = YES;
